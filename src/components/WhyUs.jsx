@@ -29,12 +29,7 @@ const cards = [
     description:
       "Post-launch support so you never hit a wall. We're always here when you need us.",
   },
-  {
-    icon: Award,
-    title: "Proven Results",
-    description:
-      "Track record across 50+ completed projects with practical delivery, clean communication, and measurable outcomes.",
-  },
+
 ];
 
 export default function WhyUs() {

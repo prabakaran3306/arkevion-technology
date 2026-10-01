@@ -58,7 +58,7 @@ export default function Footer() {
           <div className="socials">
 
             <a
-              href="#"
+              href="https://www.linkedin.com/company/arkevion-technology/"
               aria-label="LinkedIn"
               onClick={(e) => e.preventDefault()}
             >
@@ -66,19 +66,11 @@ export default function Footer() {
             </a>
 
             <a
-              href="#"
+              href="https://www.instagram.com/arkeviontech.official?stkn=MW1ndHAxaW40dzR0ZA=="
               aria-label="Instagram"
               onClick={(e) => e.preventDefault()}
             >
               <Instagram />
-            </a>
-
-            <a
-              href="#"
-              aria-label="Google"
-              onClick={(e) => e.preventDefault()}
-            >
-              <span>G</span>
             </a>
 
           </div>

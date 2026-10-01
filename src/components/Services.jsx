@@ -20,13 +20,13 @@ const data = [
   },
   {
     icon: Code2,
-    title: "Full Stack Dev",
+    title: "Full Stack Developement",
     description:
       "Complete frontend and backend applications with scalable architecture.",
   },
   {
     icon: Smartphone,
-    title: "Mobile Development",
+    title: "Mobile App Development",
     description:
       "User-friendly mobile applications built for performance and growth.",
   },
@@ -48,17 +48,18 @@ const data = [
     description:
       "Smart workflows and automation systems that save time and improve efficiency.",
   },
-  {
-    icon: Cloud,
-    title: "Cloud Solutions",
-    description:
-      "Secure, reliable cloud deployment and infrastructure.",
-  },
+  
   {
     icon: Database,
     title: "Database Solutions",
     description:
       "Structured data systems designed for speed and long-term reliability.",
+  },
+  {
+    icon: Cloud,
+    title: "Creative Media & Digital Content",
+    description:
+      "We create high-quality visual content through professional photography, videography, promotional videos, reels, and digital media solutions to strengthen your brand presence.",
   },
 ];
 
@@ -118,9 +119,6 @@ export default function Testimonials() {
 
                   <p>{service.description}</p>
 
-                  <span className="service-link">
-                    Explore <span className="arrow">→</span>
-                  </span>
 
                 </article>
               </Reveal>
