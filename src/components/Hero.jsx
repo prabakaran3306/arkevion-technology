@@ -19,10 +19,10 @@ export default function Hero() {
         <Reveal>
           <div className="hero-copy">
 
-            <h1>
-              Arkevion
-              <br />
-              <span>Technology</span>
+            <h1 style={{ color: "#555555" }}>
+            Arkevion
+            <br />
+            <span>Technology</span>
             </h1>
 
             <h3>beyond limits.</h3>

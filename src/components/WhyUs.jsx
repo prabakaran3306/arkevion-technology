@@ -5,7 +5,6 @@ import {
   ShieldCheck,
   Rocket,
   Clock3,
-  Award,
 } from "lucide-react";
 
 import { Reveal } from "../App";
@@ -59,45 +58,51 @@ export default function WhyUs() {
         {/* Vision & Mission */}
         <div className="bullet-grid">
 
-          {/* OUR VISION */}
-          <Reveal delay={35}>
-            <div className="vision-box">
+  {/* OUR VISION */}
+  <Reveal delay={35}>
+    <div className="vision-box">
 
-              <div className="bullet-item">
-                <CircleCheck size={22} />
-                <span>OUR VISION</span>
-              </div>
-
-              <p className="vision-text">
-                Establish Arkevion Technology as a globally recognized and
-                trusted technology <strong>brand</strong>, delivering
-                excellence through <strong>innovation</strong>,
-                <strong> quality</strong>, and sustainable growth.
-              </p>
-
-            </div>
-          </Reveal>
-
-          {/* OUR MISSION */}
-          <Reveal delay={70}>
-            <div className="vision-box">
-
-              <div className="bullet-item">
-                <CircleCheck size={22} />
-                <span>OUR MISSION</span>
-              </div>
-
-              <p className="vision-text">
-                To empower businesses through innovative and reliable
-                technology solutions, delivering exceptional quality,
-                timely execution, and lasting value to our clients.
-              </p>
-
-            </div>
-          </Reveal>
-
+      <div className="vision-header">
+        <div className="vision-icon">
+          <CircleCheck size={22}  />
         </div>
 
+        <h3>OUR VISION</h3>
+      </div>
+
+      <p className="vision-text">
+        Establish Arkevion Technology as a globally recognized and
+        trusted technology <strong>brand</strong>, delivering
+        excellence through <strong>innovation</strong>,
+        <strong> quality</strong>, and sustainable growth.
+      </p>
+
+    </div>
+  </Reveal>
+
+
+  {/* OUR MISSION */}
+  <Reveal delay={70}>
+    <div className="vision-box">
+
+      <div className="vision-header">
+        <div className="vision-icon">
+          <CircleCheck size={22} />
+        </div>
+
+        <h3>OUR MISSION</h3>
+      </div>
+
+      <p className="vision-text">
+        To empower businesses through innovative and reliable
+        technology solutions, delivering exceptional quality,
+        timely execution, and lasting value to our clients.
+      </p>
+
+    </div>
+  </Reveal>
+
+</div>
         {/* Why Choose Us Cards */}
         <div className="why-cards">
 

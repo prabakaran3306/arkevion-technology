@@ -22,18 +22,18 @@ export default function Footer() {
 
   const services = [
     "Web Development",
-    "Full Stack Dev",
+    "Full Stack Development",
     "Mobile Development",
     "UI/UX Design",
     "Digital Marketing",
     "AI Automation",
+    "Database Solutions",
+    "Creative Media & Digital Content",
   ];
 
   const quickLinks = [
     ["About Us", "why-us"],
-    ["Portfolio", "projects"],
     ["Internship", "internship"],
-    ["Why Choose Us", "why-us"],
     ["Testimonials", "testimonials"],
     ["Contact", "contact"],
   ];
@@ -57,23 +57,27 @@ export default function Footer() {
 
           <div className="socials">
 
-            <a
-              href="https://www.linkedin.com/company/arkevion-technology/"
-              aria-label="LinkedIn"
-              onClick={(e) => e.preventDefault()}
-            >
-              <Linkedin />
-            </a>
+  {/* LinkedIn */}
+  <a
+    href="https://www.linkedin.com/company/arkevion-technology/"
+    aria-label="LinkedIn"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Linkedin />
+  </a>
 
-            <a
-              href="https://www.instagram.com/arkeviontech.official?stkn=MW1ndHAxaW40dzR0ZA=="
-              aria-label="Instagram"
-              onClick={(e) => e.preventDefault()}
-            >
-              <Instagram />
-            </a>
+  {/* Instagram */}
+  <a
+    href="https://www.instagram.com/arkeviontech.official/"
+    aria-label="Instagram"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Instagram />
+  </a>
 
-          </div>
+</div>
 
         </div>
 

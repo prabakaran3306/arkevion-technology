@@ -841,6 +841,148 @@ a {
   font-size: 14px;
 }
 
+/* =========================
+   VISION & MISSION CARDS
+========================= */
+
+.bullet-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+  margin: 38px 0;
+}
+
+.vision-box {
+  position: relative;
+  padding: 30px;
+  min-height: 210px;
+
+  background: #ffffff;
+  border: 1px solid #e7eaf0;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+
+/* Top small line */
+
+.vision-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #06b6d4
+  );
+}
+
+/* Hover */
+
+.vision-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.13);
+  border-color: #dbeafe;
+}
+
+
+/* Header */
+
+.vision-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+
+/* Icon */
+
+.vision-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  flex-shrink: 0;
+
+  transition: all 0.3s ease;
+}
+
+.vision-box:hover .vision-icon {
+  background: #2563eb;
+  color: #ffffff;
+  transform: rotate(5deg);
+}
+
+
+/* Heading */
+
+.vision-header h3 {
+  margin: 0;
+
+  font-size: 20px;
+  font-weight: 700;
+
+  color: #111827;
+  letter-spacing: 0.5px;
+}
+
+
+/* Paragraph */
+
+.vision-text {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  color: #5b6472;
+  text-align: justify;
+}
+
+.vision-text strong {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+  .bullet-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .vision-box {
+    padding: 24px;
+    min-height: auto;
+  }
+
+  .vision-header h3 {
+    font-size: 18px;
+  }
+
+  .vision-text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
 /* =========================================================
    SERVICES
 ========================================================= */
@@ -1667,7 +1809,7 @@ a {
 /* MSME */
 
 .msme img {
-  width: 70px;
+  width: 100px;
 
   height: auto;
 
